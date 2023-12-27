@@ -28,7 +28,7 @@ body {
 #header {
     width: 100%;
     height: 100vh;
-    /*background-image: url(images/background.jpg);*/
+    background-image: url(images/backgroundd.png);
     background-size: cover;
     background-position: center;
 
@@ -51,6 +51,16 @@ nav {
 }
 .logo {
     width: 140px;
+}
+.logo-link{
+    text-decoration: none;
+    cursor: pointer;
+}
+.project-logo img{
+    transition: transform 0.5s;
+}
+.project-logo:hover img{
+    transform: scale(0.8); 
 }
 nav ul li {
     display: inline-block;
