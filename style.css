@@ -56,12 +56,6 @@ nav {
     text-decoration: none;
     cursor: pointer;
 }
-.project-logo img{
-    transition: transform 0.5s;
-}
-.project-logo:hover img{
-    transform: scale(0.8); 
-}
 nav ul li {
     display: inline-block;
     list-style-type: none;
@@ -163,6 +157,7 @@ nav ul li a:hover::after {
 .tab-contents.active-tab{
     display: block;
 }
+
 /* ------------------certificates----------*/
 #certificates {
     padding: 30px 0;
@@ -251,7 +246,6 @@ nav ul li a:hover::after {
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
-    background: #fff;
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -277,6 +271,12 @@ nav ul li a:hover::after {
 .btn:hover{
     background: rgba(247, 82, 225, 0.904);
 
+}
+.project-logo img{
+    transition: transform 0.5s;
+}
+.project-logo:hover img{
+    transform: translateY(-10px);
 }
 /* contact me */
 .contact-left {
