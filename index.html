@@ -12,13 +12,15 @@
         <div class="container">
             <nav>
                 <a class="logo-link" href="https://burhank1.github.io/"><img src="images/logo.png" alt="logo" class="logo"></a>
-                <ul>
+                <ul id="sidemenu">
                     <li><a href="#">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#certificates">Certificates</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#">Contact</a></li>
+                    <i class="fa-solid fa-xmark close" onclick="closemenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars close" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <p>Computer Scientist</p>
@@ -160,6 +162,18 @@
             event.currentTarget.classList.add("active-link");
             document.getElementById(tabname).classList.add("active-tab");
         }
+    </script>
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0"
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px"
+        }
+
     </script>
 </body>
 </html>
