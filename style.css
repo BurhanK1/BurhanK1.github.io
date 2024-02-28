@@ -380,4 +380,7 @@ nav .close {
     .fa-bars {
         cursor: pointer;
     }
+    .sub-title {
+        font-size: 40px;
+    }
 }
